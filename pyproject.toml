@@ -1,0 +1,14 @@
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+target-version = ['py39']
+include = "(src/vorta/|tests).*.py$"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+select = ["T", "I"]
+exclude = ["package"]
+fixable = ["I"]
